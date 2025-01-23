@@ -1,1 +1,82 @@
 @use "./base" as *;
+
+/* Header */
+.header {
+	background: #000;
+	height: 10rem;
+	line-height: 10rem;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.navbar {
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&-item {
+		&:hover &__link {
+			color: #ff2c2c;
+		}
+
+		&__link {
+			color: #fff;
+			padding: 0 1.6rem;
+			transition: ease 0.3s;
+			display: inline-block;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+/* Hero */
+.hero {
+	position: relative;
+
+	&__img {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+		object-position: 50% 50%;
+		opacity: 0.5;
+		pointer-events: none;
+
+		&-media {
+			background: #000;
+		}
+	}
+
+	&__content {
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+		text-align: center;
+		text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.6);
+	}
+
+	&__title {
+		font: {
+			size: 6rem;
+			weight: bold;
+			family: "Pacifico", sans-serif;
+		}
+	}
+
+	&__desc {
+		margin-top: 3rem;
+		font-size: 1.8rem;
+		line-height: 1.5;
+		font-weight: 500;
+	}
+
+	&__caption {
+		margin-top: 1rem;
+		font-style: italic;
+	}
+}
