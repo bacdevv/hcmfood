@@ -216,7 +216,8 @@
 
 			document.addEventListener("DOMContentLoaded", () => {
 				const header = document.querySelector(".header");
-				const hero = document.querySelector(".hero");
+
+				header.style.background = "transparent";
 
 				window.addEventListener("scroll", () => {
 					const headerHeight = header.offsetHeight;
