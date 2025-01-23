@@ -64,35 +64,56 @@
 		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
 	<body style="height: 5000px">
-		<header class="header">
+		<header class="header fixed scrolled">
 			<div class="container">
-				<div class="row">
-					<div class="col">
-						<a href="#!" class="logo">
-							<img
-								src="./assets/img/logo.png"
-								alt="Logo HCM FOOD"
-								class="logo__img animate__animated animate__rollIn"
-							/>
-							<span class="animate__animated animate__flipInX logo__name">HCM<br />FOOD</span>
-						</a>
-					</div>
+				<div class="header__inner">
+					<a href="#!" class="logo">
+						<img
+							src="./assets/img/logo.png"
+							alt="Logo HCM FOOD"
+							class="logo__img animate__animated animate__rollIn"
+						/>
+						<strong class="animate__animated animate__flipInX logo__name"
+							>HCM<br /><strong class="red-text-color">FOOD</strong></strong
+						>
+					</a>
 
-					<div class="col">
-						<nav class="navbar">
-							<ul class="navbar__list animate__animated animate__slideInRight">
-								<li class="navbar-item"><a href="#!" class="navbar-item__link">Trang Chủ</a></li>
-								<li class="navbar-item">
-									<a href="#!" class="navbar-item__link">Về Chúng Tôi</a>
-								</li>
-								<li class="navbar-item"><a href="#!" class="navbar-item__link">Ẩm thực</a></li>
-								<li class="navbar-item"><a href="#!" class="navbar-item__link">Đặc biệt</a></li>
-								<li class="navbar-item"><a href="#!" class="navbar-item__link">Liên Hệ</a></li>
-							</ul>
-						</nav>
-					</div>
+					<label for="menu-checkbox" class="menu-toggle">
+						<svg class="bar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+							<path
+								fill="currentColor"
+								d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+							/>
+						</svg>
+					</label>
+
+					<nav class="navbar">
+						<ul class="navbar__list animate__animated animate__slideInRight">
+							<li class="navbar-item">
+								<a href="#" class="navbar-item__link red-text-color">Trang Chủ</a>
+							</li>
+							<li class="navbar-item">
+								<a href="#!" class="navbar-item__link">Về Chúng Tôi</a>
+							</li>
+							<li class="navbar-item"><a href="#!" class="navbar-item__link">Ẩm thực</a></li>
+							<li class="navbar-item"><a href="#!" class="navbar-item__link">Đặc biệt</a></li>
+							<li class="navbar-item"><a href="#!" class="navbar-item__link">Liên Hệ</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
+		</header>
+
+		<!-- Tablet / Mobile Header -->
+		<header class="mobile-header">
+			<input type="checkbox" class="menu-checkbox" id="menu-checkbox" hidden />
+
+			<!-- Menu Overlay -->
+			<label for="menu-checkbox" class="menu-overlay"></label>
+
+			<!-- Menu Drawer -->
+			<div class="menu-drawer"></div>
 		</header>
 
 		<main>
@@ -191,8 +212,22 @@
 					setTimeout(typeWriter, speed);
 				}
 			}
-
 			typeWriter();
+
+			document.addEventListener("DOMContentLoaded", () => {
+				const header = document.querySelector(".header");
+				const hero = document.querySelector(".hero");
+
+				window.addEventListener("scroll", () => {
+					const headerHeight = header.offsetHeight;
+
+					if (window.scrollY > headerHeight) {
+						header.style.background = "#000";
+					} else {
+						header.style.background = "transparent";
+					}
+				});
+			});
 		</script>
 	</body>
 </html>
