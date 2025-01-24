@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -24,10 +26,15 @@ a {
 	text-decoration: none;
 }
 
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
 .typing-effect {
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 2px solid #fff;
+	border-right: 0.2rem solid #fff;
 	width: 20ch;
 	margin: 0 auto;
 }
@@ -52,6 +59,7 @@ a {
 	}
 
 	&__name {
+		@include textShadow;
 		font: {
 			weight: 600;
 			size: 2.5em;
@@ -60,4 +68,13 @@ a {
 		letter-spacing: 0.4em;
 		line-height: 1.2;
 	}
+}
+
+.section-heading {
+	font: {
+		family: "Pacifico", sans-serif;
+		size: 2.8rem;
+	}
+	line-height: 2.2rem;
+	margin-bottom: 1.1rem;
 }

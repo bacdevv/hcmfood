@@ -6,14 +6,43 @@
 @media (max-width: 767.98px) {
 }
 
-// Tablet & Mobile
-@media (min-width: 768px) and (max-width: 991.98px) {
-}
-
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+	.hide-on-mobile {
+		display: none;
+	}
+
 	.header__inner {
 		padding: 1rem 0;
+		height: 7rem;
+	}
+
+	.mobile-header {
+		display: block;
+		.logo {
+			margin-top: 2rem;
+			margin-left: 28%;
+		}
+	}
+
+	.navbar {
+		&__list {
+			margin-top: 2rem;
+			display: block;
+			text-align: center;
+		}
+
+		&-item {
+			&__link {
+				display: block;
+				padding: 2rem 0;
+				text-shadow: none;
+			}
+
+			&:hover {
+				background: #f1f1f1;
+			}
+		}
 	}
 
 	.logo {
@@ -26,10 +55,6 @@
 
 	.bar-icon {
 		display: block;
-	}
-
-	.navbar {
-		display: none;
 	}
 
 	.hero {
@@ -49,6 +74,22 @@
 
 		&__caption {
 			font-size: 1.4rem;
+		}
+	}
+
+	.about {
+		padding: 5rem 0;
+
+		&__img {
+			margin-top: -5rem;
+		}
+
+		&__caption {
+			font-size: 2.2rem;
+		}
+
+		&__desc {
+			font-size: 1.8rem;
 		}
 	}
 }
