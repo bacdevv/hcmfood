@@ -12,6 +12,14 @@
 		display: none;
 	}
 
+	.section-slogan {
+		font-size: 2.2rem;
+	}
+
+	.section-desc {
+		font-size: 1.8rem;
+	}
+
 	.header__inner {
 		padding: 1rem 0;
 		height: 7rem;
@@ -78,22 +86,55 @@
 	}
 
 	.about {
+		background-attachment: scroll;
+
 		padding: 5rem 0;
 
 		&__img {
 			margin-top: -5rem;
 		}
+	}
 
-		&__caption {
-			font-size: 2.2rem;
+	.feature {
+		background-attachment: scroll;
+		&__content {
+			padding: 2rem;
 		}
+	}
 
-		&__desc {
-			font-size: 1.8rem;
+	.experience {
+		background-attachment: scroll;
+
+		&__media {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.special {
+		&-item {
+			display: block;
+			&__content {
+				display: block;
+			}
+
+			&__img {
+				width: 100%;
+			}
 		}
 	}
 }
 
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+	.special {
+		&-item {
+			display: block;
+			text-align: center;
+			&__content {
+				width: 100%;
+				margin-left: 0;
+				margin-top: 0;
+			}
+		}
+	}
 }

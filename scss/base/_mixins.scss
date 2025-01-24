@@ -1,3 +1,21 @@
 @mixin textShadow() {
 	text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.6);
 }
+
+%centerBlock {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+}
+
+@mixin createBg($url) {
+	background: url($url) no-repeat center fixed;
+	background-size: cover;
+}
+
+%propertyBg {
+	width: 100%;
+	overflow: hidden;
+	min-height: 100vh;
+}

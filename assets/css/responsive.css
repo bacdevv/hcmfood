@@ -2,6 +2,12 @@
   .hide-on-mobile {
     display: none;
   }
+  .section-slogan {
+    font-size: 2.2rem;
+  }
+  .section-desc {
+    font-size: 1.8rem;
+  }
   .header__inner {
     padding: 1rem 0;
     height: 7rem;
@@ -50,16 +56,43 @@
     font-size: 1.4rem;
   }
   .about {
+    background-attachment: scroll;
     padding: 5rem 0;
   }
   .about__img {
     margin-top: -5rem;
   }
-  .about__caption {
-    font-size: 2.2rem;
+  .feature {
+    background-attachment: scroll;
   }
-  .about__desc {
-    font-size: 1.8rem;
+  .feature__content {
+    padding: 2rem;
+  }
+  .experience {
+    background-attachment: scroll;
+  }
+  .experience__media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .special-item {
+    display: block;
+  }
+  .special-item__content {
+    display: block;
+  }
+  .special-item__img {
+    width: 100%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .special-item {
+    display: block;
+    text-align: center;
+  }
+  .special-item__content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 

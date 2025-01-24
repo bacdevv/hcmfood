@@ -63,7 +63,7 @@
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
-	<body style="height: 5000px">
+	<body style="height: 15000px">
 		<header class="header fixed scrolled">
 			<div class="container">
 				<div class="header__inner">
@@ -72,9 +72,9 @@
 						<img
 							src="./assets/img/logo.png"
 							alt="Logo HCM FOOD"
-							class="logo__img animate__animated animate__rollIn"
+							class="logo__img wow animate__rollIn"
 						/>
-						<strong class="animate__animated animate__flipInX logo__name"
+						<strong class="wow animate__flipInX logo__name"
 							>HCM<br /><strong class="red-text-color">FOOD</strong></strong
 						>
 					</a>
@@ -90,14 +90,14 @@
 					</label>
 
 					<nav class="navbar hide-on-mobile">
-						<ul class="navbar__list animate__animated animate__slideInRight">
+						<ul class="navbar__list wow animate__slideInRight">
 							<li class="navbar-item">
 								<a href="#" class="navbar-item__link red-text-color">Trang Chủ</a>
 							</li>
 							<li class="navbar-item">
 								<a href="#about" class="navbar-item__link">Về Chúng Tôi</a>
 							</li>
-							<li class="navbar-item"><a href="#!" class="navbar-item__link">Ẩm Thực</a></li>
+							<li class="navbar-item"><a href="#food" class="navbar-item__link">Ẩm Thực</a></li>
 							<li class="navbar-item"><a href="#!" class="navbar-item__link">Đặc Biệt</a></li>
 							<li class="navbar-item"><a href="#!" class="navbar-item__link">Liên Hệ</a></li>
 						</ul>
@@ -120,21 +120,21 @@
 					<img
 						src="./assets/img/logo.png"
 						alt="Logo HCM FOOD"
-						class="logo__img animate__animated animate__rollIn"
+						class="logo__img wow animate__rollIn"
 					/>
-					<strong class="animate__animated animate__flipInX logo__name"
+					<strong class="wow animate__flipInX logo__name"
 						>HCM<br /><strong class="red-text-color">FOOD</strong></strong
 					>
 				</a>
 				<nav class="navbar">
-					<ul class="navbar__list animate__animated animate__slideInRight">
+					<ul class="navbar__list wow animate__slideInRight">
 						<li class="navbar-item">
 							<a href="#" class="navbar-item__link red-text-color">Trang Chủ</a>
 						</li>
 						<li class="navbar-item">
 							<a href="#about" class="navbar-item__link">Về Chúng Tôi</a>
 						</li>
-						<li class="navbar-item"><a href="#!" class="navbar-item__link">Ẩm Thực</a></li>
+						<li class="navbar-item"><a href="#food" class="navbar-item__link">Ẩm Thực</a></li>
 						<li class="navbar-item"><a href="#!" class="navbar-item__link">Đặc Biệt</a></li>
 						<li class="navbar-item"><a href="#!" class="navbar-item__link">Liên Hệ</a></li>
 					</ul>
@@ -150,7 +150,7 @@
 							<img src="./assets/img/com-tam.jpg" alt="Cơm tấm" class="hero__img" />
 						</figure>
 
-						<div class="hero__content animate__animated animate__jackInTheBox">
+						<div class="hero__content wow animate__jackInTheBox">
 							<h1 class="hero__title">
 								Quảng Bá
 								<p class="red-text-color">ẩmThực</p>
@@ -170,25 +170,33 @@
 				<div class="container">
 					<div class="row row-cols-1 row-cols-md-2">
 						<div class="col col-lg-5">
-							<img src="./assets/img/logo.png" alt="Logo" class="about__img" />
+							<img
+								src="./assets/img/logo.png"
+								alt="Logo"
+								class="about__img wow animate__rotateIn"
+							/>
 						</div>
 						<div class="col">
-							<h2 class="section-heading about__heading">Về Chúng Tôi</h2>
-							<h3 class="about__caption">
-								Nhóm 9 | Tin Toán - <span>"Toan tính thông minh, dẫn lối thành công"</span>
-							</h3>
-							<p class="about__desc">
-								Nhóm chúng tôi có 9 con người, nhưng số lượng không quan trọng, quan trọng là chất
-								lượng. Trong đó, chỉ có 3 anh nam IT và 1 chị đẹp – vừa đập bàn phím, vừa gánh cả
-								bầu trời bug. Còn lại là 5 chị em kế toán – đam mê tính toán, không phải vì tiền, mà
-								là vì cân đối sổ sách nó vui!
-							</p>
-							<p class="about__desc">
-								Chúng tôi đặt tên nhóm là Tin Toán không phải vì thích "toán tính" gì đâu, mà đơn
-								giản là ghép hai ngành lại cho nó kêu. Cũng tiện vì nghe vậy ai cũng tưởng chúng tôi
-								thông minh và nguy hiểm, đúng tinh thần của slogan: "Toan tính thông minh, dẫn lối
-								thành công" – thực ra là để lừa nhà tài trợ thôi.
-							</p>
+							<h2 class="section-heading about__heading wow animate__bounceInRight">
+								# Về Chúng Tôi
+							</h2>
+							<div class="about__content wow animate__bounceInRight">
+								<h3 class="section-slogan about__slogan">
+									Nhóm 9 | Tin Toán - <span>"Toan tính thông minh, dẫn lối thành công"</span>
+								</h3>
+								<p class="section-desc about__desc">
+									Nhóm chúng tôi có 9 con người, nhưng số lượng không quan trọng, quan trọng là chất
+									lượng. Trong đó, chỉ có 3 anh nam IT và 1 chị đẹp – vừa đập bàn phím, vừa gánh cả
+									bầu trời bug. Còn lại là 5 chị em kế toán – đam mê tính toán, không phải vì tiền,
+									mà là vì cân đối sổ sách nó vui!
+								</p>
+								<p class="section-desc about__desc">
+									Chúng tôi đặt tên nhóm là Tin Toán không phải vì thích "toán tính" gì đâu, mà đơn
+									giản là ghép hai ngành lại cho nó kêu. Cũng tiện vì nghe vậy ai cũng tưởng chúng
+									tôi thông minh và nguy hiểm, đúng tinh thần của slogan: "Toan tính thông minh, dẫn
+									lối thành công" – thực ra là để lừa nhà tài trợ thôi.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -196,25 +204,231 @@
 
 			<section class="feature">
 				<div class="container">
-					<div class="row"></div>
+					<div class="row">
+						<div class="col">
+							<div class="feature__content wow animate__backInDown">
+								<h2 class="section-heading feature__heading"># Giới thiệu</h2>
+								<h3 class="section-slogan feature__slogan">
+									Ẩm Thực Sài Gòn – Tinh Hoa Kết Hợp Từ Mọi Vùng Miền
+								</h3>
+								<p class="section-desc feature__desc">
+									Sài Gòn – Thành phố không ngủ không chỉ nổi bật với nhịp sống sôi động mà còn là
+									một thiên đường ẩm thực với sự kết hợp giữa hương vị truyền thống và hiện đại,
+									giữa các vùng miền và văn hóa quốc tế. Mỗi món ăn, mỗi thức uống tại đây đều mang
+									theo câu chuyện riêng, gắn liền với lịch sử và sự phát triển của thành phố.
+								</p>
+								<p class="section-desc feature__desc">
+									Ẩm thực Sài Gòn không chỉ có những món ăn từ các tỉnh khác nhập vào, mà còn là
+									những sáng tạo đặc biệt của người dân nơi đây. Từ những món ăn vỉa hè bình dị như
+									hủ tiếu, bánh mì, cơm tấm, đến những đồ uống độc đáo như cà phê vợt, sâm bí đao,
+									hay nước mía, tất cả đều góp phần tạo nên một bức tranh phong phú và đa dạng về ẩm
+									thực. Đây là nơi hòa quyện giữa cũ và mới, giữa những hương vị dân dã và sáng tạo
+									đột phá.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
-			<section class="experience">
+			<section class="experience" id="food">
 				<div class="container">
-					<div class="row"></div>
 					<div class="row">
-						<div class="col"></div>
-						<div class="col"></div>
+						<div class="col">
+							<div class="experience__content">
+								<h2 class="section-heading"># Ẩm Thực</h2>
+								<p class="section-slogan">Hương vị Sài Gòn – Tinh hoa trong từng món ăn</p>
+							</div>
+
+							<div class="experience__media">
+								<figure class="experience__media-wrap tall">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-01.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+								<figure class="experience__media-wrap tall">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-02.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+								<figure class="experience__media-wrap big">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-03.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+								<figure class="experience__media-wrap big">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-04.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+								<figure class="experience__media-wrap tall">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-05.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+								<figure class="experience__media-wrap big">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-03.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+								<figure class="experience__media-wrap big">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-04.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+								<figure class="experience__media-wrap tall">
+									<img
+										loading="lazy"
+										src="./assets/img/experience-02.jpg"
+										alt="Món ăn sài gòn"
+										class="experience__media-img wow animate__zoomInUp"
+									/>
+								</figure>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="special">
 				<div class="container">
+					<div class="special__content">
+						<h2 class="section-heading special__heading">Đặc biệt</h2>
+						<h3 class="section-slogan spcial__slogan">Uống một ngụm, cảm một Sài Gòn</h3>
+					</div>
 					<div class="row">
-						<div class="col"></div>
-						<div class="col"></div>
+						<div class="col">
+							<div class="special__list">
+								<div class="special-item">
+									<img
+										loading="lazy"
+										src="./assets/img/special-01.jpg"
+										alt=""
+										class="special-item__img wow animate__rotateInDownLeft"
+									/>
+
+									<div class="special-item__content wow animate__tada">
+										<h3 class="section-heading special-item__heading">Rau Má Đậu Xanh</h3>
+										<p class="section-desc special-item__desc">
+											Trong những ngày nắng nóng, người dân Sài Gòn luôn tìm đến một thức uống vừa
+											giải nhiệt, vừa tốt cho sức khỏe: Rau má đậu xanh. Đây không chỉ là một món đồ
+											uống thông thường mà còn là biểu tượng của sự dân dã và gần gũi, gắn liền với
+											ký ức của bao thế hệ.
+										</p>
+
+										<p class="section-desc special-item__desc">
+											Rau má đậu xanh không chỉ giúp giải khát mà còn được xem như một thức uống
+											"lành mạnh": tốt cho da, thải độc, và cực kỳ hợp để chống chọi với cái nắng oi
+											bức của Sài Gòn. Dạo quanh Sài Gòn, bạn có thể dễ dàng bắt gặp những xe nước
+											mộc mạc bán rau má đậu xanh ở vỉa hè. Một ly nước mát lạnh, xanh ngát trong
+											tay, chẳng cần gì hơn để cảm nhận hơi thở của thành phố này!
+										</p>
+									</div>
+								</div>
+
+								<div class="special-item">
+									<img
+										loading="lazy"
+										src="./assets/img/special-01.jpg"
+										alt=""
+										class="special-item__img wow animate__rotateInDownLeft"
+									/>
+
+									<div class="special-item__content wow animate__tada">
+										<h3 class="section-heading special-item__heading">Rau Má Đậu Xanh</h3>
+										<p class="section-desc special-item__desc">
+											Trong những ngày nắng nóng, người dân Sài Gòn luôn tìm đến một thức uống vừa
+											giải nhiệt, vừa tốt cho sức khỏe: Rau má đậu xanh. Đây không chỉ là một món đồ
+											uống thông thường mà còn là biểu tượng của sự dân dã và gần gũi, gắn liền với
+											ký ức của bao thế hệ.
+										</p>
+
+										<p class="section-desc special-item__desc">
+											Rau má đậu xanh không chỉ giúp giải khát mà còn được xem như một thức uống
+											"lành mạnh": tốt cho da, thải độc, và cực kỳ hợp để chống chọi với cái nắng oi
+											bức của Sài Gòn. Dạo quanh Sài Gòn, bạn có thể dễ dàng bắt gặp những xe nước
+											mộc mạc bán rau má đậu xanh ở vỉa hè. Một ly nước mát lạnh, xanh ngát trong
+											tay, chẳng cần gì hơn để cảm nhận hơi thở của thành phố này!
+										</p>
+									</div>
+								</div>
+
+								<div class="special-item">
+									<img
+										loading="lazy"
+										src="./assets/img/special-01.jpg"
+										alt=""
+										class="special-item__img wow animate__rotateInDownLeft"
+									/>
+
+									<div class="special-item__content wow animate__tada">
+										<h3 class="section-heading special-item__heading">Rau Má Đậu Xanh</h3>
+										<p class="section-desc special-item__desc">
+											Trong những ngày nắng nóng, người dân Sài Gòn luôn tìm đến một thức uống vừa
+											giải nhiệt, vừa tốt cho sức khỏe: Rau má đậu xanh. Đây không chỉ là một món đồ
+											uống thông thường mà còn là biểu tượng của sự dân dã và gần gũi, gắn liền với
+											ký ức của bao thế hệ.
+										</p>
+
+										<p class="section-desc special-item__desc">
+											Rau má đậu xanh không chỉ giúp giải khát mà còn được xem như một thức uống
+											"lành mạnh": tốt cho da, thải độc, và cực kỳ hợp để chống chọi với cái nắng oi
+											bức của Sài Gòn. Dạo quanh Sài Gòn, bạn có thể dễ dàng bắt gặp những xe nước
+											mộc mạc bán rau má đậu xanh ở vỉa hè. Một ly nước mát lạnh, xanh ngát trong
+											tay, chẳng cần gì hơn để cảm nhận hơi thở của thành phố này!
+										</p>
+									</div>
+								</div>
+
+								<div class="special-item">
+									<img
+										loading="lazy"
+										src="./assets/img/special-01.jpg"
+										alt=""
+										class="special-item__img wow animate__rotateInDownLeft"
+									/>
+
+									<div class="special-item__content wow animate__tada">
+										<h3 class="section-heading special-item__heading">Rau Má Đậu Xanh</h3>
+										<p class="section-desc special-item__desc">
+											Trong những ngày nắng nóng, người dân Sài Gòn luôn tìm đến một thức uống vừa
+											giải nhiệt, vừa tốt cho sức khỏe: Rau má đậu xanh. Đây không chỉ là một món đồ
+											uống thông thường mà còn là biểu tượng của sự dân dã và gần gũi, gắn liền với
+											ký ức của bao thế hệ.
+										</p>
+
+										<p class="section-desc special-item__desc">
+											Rau má đậu xanh không chỉ giúp giải khát mà còn được xem như một thức uống
+											"lành mạnh": tốt cho da, thải độc, và cực kỳ hợp để chống chọi với cái nắng oi
+											bức của Sài Gòn. Dạo quanh Sài Gòn, bạn có thể dễ dàng bắt gặp những xe nước
+											mộc mạc bán rau má đậu xanh ở vỉa hè. Một ly nước mát lạnh, xanh ngát trong
+											tay, chẳng cần gì hơn để cảm nhận hơi thở của thành phố này!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div class="row">
@@ -242,10 +456,18 @@
 			</div>
 		</footer>
 
-		<script src="js/wow.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+			integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script>
-			new WOW().init();
+			new WOW({
+				animateClass: "animate__animated",
+				offset: 100,
+			}).init();
 		</script>
-		<script src="./assets/js/main.js"></script>
+		<script async src="./assets/js/main.js"></script>
 	</body>
 </html>

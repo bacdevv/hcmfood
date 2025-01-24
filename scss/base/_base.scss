@@ -8,10 +8,12 @@ html {
 	font-family: "Inter", "Playwrite VN", sans-serif;
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding: 10rem;
 }
 
 body {
 	font-size: 1.6rem;
+	background: #1e2e3b;
 }
 
 input,
@@ -77,4 +79,31 @@ img {
 	}
 	line-height: 2.2rem;
 	margin-bottom: 1.1rem;
+}
+
+.section-desc {
+	margin-top: 1.6rem;
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.section-slogan {
+	margin-top: 2.2rem;
+	line-height: 1.5;
+	font-size: 2.6rem;
+	font-weight: 700;
+}
+
+.tall {
+	grid-row: span 2;
+}
+
+.wide {
+	grid-column: span 2;
+}
+
+.big {
+	grid-column: span 2;
+	grid-row: span 2;
 }
